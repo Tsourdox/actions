@@ -1,8 +1,8 @@
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { Button, StyleSheet, Text, View } from "react-native";
-import { RootStackParamList } from "../navigators/RootStackNavigator";
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { RootStackParamList } from '../navigators/RootStackNavigator';
 
-type Props = NativeStackScreenProps<RootStackParamList, "Home">;
+type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export default function HomeScreen({ navigation }: Props) {
   return (
@@ -10,7 +10,7 @@ export default function HomeScreen({ navigation }: Props) {
       <Text>Home</Text>
       <Button
         title="Go to details"
-        onPress={() => navigation.navigate("Details")}
+        onPress={() => navigation.navigate('Details')}
       />
     </View>
   );
@@ -19,8 +19,8 @@ export default function HomeScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
